@@ -9,6 +9,7 @@
             <a href="/surveyslist/add" class="btn btn-primary" role="button">
                 <i class="fas fa-plus-circle"></i> Create a Survey
             </a>
+            <!--Creating a table bordered, striped, and hover for each element-->
             <table class="table table-bordered table-striped table-hover">
                 <tr class="d-flex">
                     <th class="text-center col-2">Name</th>
@@ -18,6 +19,7 @@
                     <th class="text-center col-3">Improvments</th>
                     <th class="text-center col-2">Actions</th>
                 </tr>
+                <!--For loop for each survey list-->
                 <% for(let count=0;count<SurveyList.length;count++) { %>
                 <tr class="d-flex">
                     <td class="text-center col-2"><%= SurveyList[count].Name %></td>
@@ -25,7 +27,7 @@
                     <td class="text-center col-2"><%= SurveyList[count].Satisfaction %></td>
                     <td class="text-center col-3"><%= SurveyList[count].DurationOfEmployment %> </td>
                     <td class="text-center col-3"><%= SurveyList[count].Improvments %></td>
-                    
+                    <!--Creating a data cell class for the survey-->
                     <td class="text-center col-1">
                         <a href="/surveyslist/edit/<%= SurveyList[count]._id%>"
                             class="btn btn-primary btn-sm">

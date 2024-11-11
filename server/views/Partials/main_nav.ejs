@@ -1,15 +1,19 @@
 <!--NavBar-->
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <!--Creating  a division class tag called container fluid-->
   <div class="container-fluid">
       <a class="navbar-brand" href="/">
         <i class="fa-solid fa-envelope"></i> Job Satisfaction Survey</a>
   </div>
+     <!--Creating a button class called navbar-toggler-->
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav ms-auto">
+          <!--Creating the list class for the navbar item.-->
           <li class="nav-item">
+            <!--Creating if and else statements to operate the nav-link in a right way-->
             <% if(title=="Surveys") { %>
               <a class="nav-link active" href="/surveyslist">
             <% } else {%>
