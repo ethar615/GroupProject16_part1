@@ -1,13 +1,13 @@
 <%- include ../Partials/header.ejs%>
 <%- include ../Partials/main_nav.ejs%>
-<!--Content for the edit Operation-->
+<!--Content for edit Operation-->
 <div class="container"></div>
     <div class="row">
-        <!--Creating a division and creating class for the size of colmuns-->
+        <!--Creating division and creating class for the size of colmuns-->
         <div class="offset-md-3 col-md-6">
             <h1><%= title %></h1>
             <form class="form" method="POST">
-                <!--Creating a division class called form-group-->
+                <!--Creating division class called form-group-->
                 <div class="form-group">
                     <label for="nameTextField">Name</label>
                     <input type="text" class="form-control" id="nameTextField" placeholder="Enter Your Name" name="Name" value="<%= Survey.Name %>" required>
@@ -27,9 +27,9 @@
                 <div class="form-group">
                     <label for="ImprovmentsTextArea">What changes would improve your job satisfaction?</label>
                     <textarea type="text" class="form-control" id="ImprovmentsTextArea" placeholder="Describe the suggested improvement" name="Improvments" required><%= Survey.Improvments %></textarea>
-                    <!--Text area field for large information-->
+                    <!--Text Area field for large information-->
                 </div>
-                <!--Creating a button for submit and cancel-->
+                <!--Creating button for submit and cancel-->
                 <button class="btn btn-primary" type="submit">Submit
                 <i class="fas fa-edit"></i></button>  
                 <button class="btn btn-warning" type="submit">Cancel
